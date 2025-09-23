@@ -2,7 +2,7 @@ import React from "react";
 export default function IngredientsList(props) {
   const [adding, setAdding] = React.useState([]);
   const [removing, setRemoving] = React.useState([]);
-  // Видалено модальне підтвердження
+  // Modal confirmation removed
 
   React.useEffect(() => {
     setAdding(props.ingredients);
@@ -32,7 +32,7 @@ export default function IngredientsList(props) {
         <button
           className="btn remove-ingredient-btn"
           onClick={() => handleRemove(name)}
-          aria-label={`Видалити ${name}`}
+          aria-label={`Remove ${name}`}
         >
           &#10006;
         </button>
