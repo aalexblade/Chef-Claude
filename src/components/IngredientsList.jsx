@@ -2,7 +2,7 @@ import React from "react";
 export default function IngredientsList(props) {
   const [adding, setAdding] = React.useState([]);
   const [removing, setRemoving] = React.useState([]);
-  // Modal confirmation removed
+  
 
   React.useEffect(() => {
     setAdding(props.ingredients);

@@ -5,11 +5,7 @@ import chefClaudeLogo from "./images/chef-claude-icon.png";
 export default function App() {
   return (
     <>
-      <Header
-        title="Chef Claude"
-        subtitle="Your AI-powered recipe assistant"
-        logoSrc={chefClaudeLogo}
-      />
+      <Header title="Chef Claude" logoSrc={chefClaudeLogo} />
       <Main />
     </>
   );

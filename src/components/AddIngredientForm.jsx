@@ -12,16 +12,18 @@ export default function AddIngredientForm({ onAdd, error }) {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} className="add-ingredient-form">
-      <input
-        type="text"
-        placeholder="e.g. oregano"
-        aria-label="Add ingredient"
-        name="ingredient"
-      />
+      <div className="add-ingredient-input-wrapper">
+        <input
+          type="text"
+          placeholder="e.g. oregano"
+          aria-label="Add ingredient"
+          name="ingredient"
+        />
+        {error && <span className="add-ingredient-error">{error}</span>}
+      </div>
       <button className="btn add-ingredient-btn" title="Add ingredient">
         Add ingredient
       </button>
-      {error && <div style={{ color: "red", marginTop: "8px" }}>{error}</div>}
     </form>
   );
 }
