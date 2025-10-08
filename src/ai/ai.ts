@@ -101,5 +101,3 @@ export async function getRecipeFromMistral(
     return undefined;
   }
 }
-
-
