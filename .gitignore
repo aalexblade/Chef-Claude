@@ -12,6 +12,37 @@ dist
 dist-ssr
 *.local
 
+# Vite/React/TypeScript build outputs
+*.tsbuildinfo
+*.d.ts
+vite-env.d.ts
+tsconfig.tsbuildinfo
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Production build
+build/
+
+# Misc
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore public build artifacts
+public/*.svg
+public/*.png
+public/*.jpg
+public/*.jpeg
+public/*.gif
+public/*.webp
+
+# Ignore generated assets in dist
+dist/assets/*
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
