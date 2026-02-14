@@ -38,26 +38,32 @@ This project was built to practice **React 18** core concepts, including state m
 
 ---
 
-### ⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/aalexblade/Chef-Claude.git && cd Chef-Claude
    ```
 2. Install dependencies:
+    ```
    npm install
+     ```
 
-3. Environment Setup:
+4. Environment Setup:
+   ```
    VITE_HF_ACCESS_TOKEN=your_token_here
+   ```
 
-4. Launch the app:
+6. Launch the app:
+   ```
    npm run dev
+    ```
 
 ---
 
-### 📝 How to Use
+## 📝 How to Use
 Enter an ingredient (e.g., "eggs", "flour", "milk").
 
 Click + Add ingredient.
